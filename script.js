@@ -1,4 +1,0 @@
-function my() {
-  alert("jfchgv")
-    
-  }

@@ -88,7 +88,22 @@ $apiKey = "rzp_test_aZ6zwuVc4MmnAa";
             </form>
 
 <form action="success.html" method="POST">
-
+<script
+    src="https://checkout.razorpay.com/v1/checkout.js"
+    data-key="<?php echo $apiKey; ?>" 
+    data-amount="<?php echo $total * 100;?>" 
+    data-currency="INR"
+    data-id="<?php echo 'OID'.rand(10,100).'END';?>"
+    data-buttontext=""
+    data-name="Samagra"
+    data-description="Development!"
+    data-image="../../pp.jpg"
+    data-prefill.name="<?php echo $name;?>"
+    data-prefill.email="<?php echo $email;?>"
+    data-prefill.contact="<?php echo $mobile;?>"
+    data-theme.color="#F37254"
+  
+></script>
 <div class="buttons"> <button class="btn btn-success btn-block" type="submit" onclick="v()">Proceed to payment</button> </div>
 
 </form>
@@ -125,21 +140,6 @@ $apiKey = "rzp_test_aZ6zwuVc4MmnAa";
   </div>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script
-    src="https://checkout.razorpay.com/v1/checkout.js"
-    data-key="<?php echo $apiKey; ?>" 
-    data-amount="<?php echo $total * 100;?>" 
-    data-currency="INR"
-    data-id="<?php echo 'OID'.rand(10,100).'END';?>"
-    data-buttontext=""
-    data-name="Samagra"
-    data-description="Development!"
-    data-image="../../pp.jpg"
-    data-prefill.name="<?php echo $name;?>"
-    data-prefill.email="<?php echo $email;?>"
-    data-prefill.contact="<?php echo $mobile;?>"
-    data-theme.color="#F37254"
-  
-></script>
+
 </body>
 </html>
